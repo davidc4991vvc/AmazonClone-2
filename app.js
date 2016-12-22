@@ -9,7 +9,6 @@ var cookieParser = require('cookie-parser');
 var flush = require('express-flash');
 
 var User = require('./models/user');
-
 var app = express();
 
 mongoose.connect('mongodb://root:abc123@ds141108.mlab.com:41108/ecommerce',function(err){
