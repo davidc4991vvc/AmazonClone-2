@@ -39,6 +39,6 @@ userSchema.pre('save',function(next){
 // Compare the password in the database and the one that the user typed in
 userSchema.methods.comparePassword = function(password){
   return bcrypt.compareSync(password, this.password);
-};
+}
 
 module.exports = mongoose.model('User',userSchema);
